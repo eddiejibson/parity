@@ -31,7 +31,7 @@ button {
   background-color: #ee5253;
   color: #fff;
   border: 1px solid transparent;
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
 }
 .submit-button {
   line-height: 53px;
