@@ -34,7 +34,31 @@ if (userInput.length == 7) {
     //parity bit is 0
   }
 } else if (userInput.length == 8) {
- console.log(userInput.substr(1, userInput.length));
+  if (isBinaryOdd(userInput.substr(1, userInput.length)) { //Don't send parity bit
+      if (userInput.substr(0, 1) == 1) {
+        swal({
+          icon: "success",
+          title: "Valid!"
+        });
+      } else {
+        swal({
+          icon: "error",
+          title: "Invalid :("
+        });
+      }
+  } else {
+    if (userInput.substr(0, 1) == 0) {
+        swal({
+          icon: "success",
+          title: "Valid!"
+        });
+      } else {
+        swal({
+          icon: "error",
+          title: "Invalid :("
+        });
+      }
+  }
 }
 });
 document.getElementById("submit").addEventListener("click", getOutput);
