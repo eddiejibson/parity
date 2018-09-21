@@ -1,9 +1,9 @@
 let userInput = "0100000"; //test
 const isOdd = ((val) => {
-  if (value%2 == 0) {
-    return true;
-  }  else {
+  if (val %2 == 0) {
     return false;
+  }  else {
+    return true;
   }
 });
 
