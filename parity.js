@@ -1,4 +1,4 @@
-window.onload = (() => {
+
   
   const isOdd = ((val) => {
     if (val %2 == 0) {
@@ -7,7 +7,7 @@ window.onload = (() => {
       return true;
     }
   });
-
+  
   var getOutput = (() => {
     let userInput = document.getElementById('binaryInput').value,
         oneCount = 0;
@@ -29,10 +29,8 @@ window.onload = (() => {
       //parity bit is 0
     }
   }
-  document.getElementById("submit").addEventListener("click", getOutput);
-
   });
-});
+  document.getElementById("submit").addEventListener("click", getOutput);
 
 
 
