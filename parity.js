@@ -1,4 +1,4 @@
-let userInput = "0100000"; //test
+document.getElementById("submit").addEventListener("click", process);
 const isOdd = ((val) => {
   if (val %2 == 0) {
     return false;
@@ -7,7 +7,9 @@ const isOdd = ((val) => {
   }
 });
 
-if (userInput.length == 7) {
+const process = (() => {
+  let userInput = document.getElementById('binaryInput').value;
+  if (userInput.length == 7) {
   for (i = 0; i < userInput.length; i++) { 
     let oneCount = 0;
     console.log(userInput.charAt(i));
@@ -16,10 +18,14 @@ if (userInput.length == 7) {
     }
   }
   if (isOdd(oneCount)) {
+    console.log("Parity bit is 1")
     //parity bit is 1
   } else {
     //parity bit is 0
   }
 }
+
+});
+
 
 
