@@ -1,4 +1,4 @@
-document.getElementById("submit").addEventListener("click", process);
+document.getElementById("submit").addEventListener("click", process());
 const isOdd = ((val) => {
   if (val %2 == 0) {
     return false;
