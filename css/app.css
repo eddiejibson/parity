@@ -30,7 +30,11 @@ button {
 .submit-button {
   line-height: 53px;
 }
-
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 button:hover, button:focus {
   background-color: #ff6b6b;
 }
