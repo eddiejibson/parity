@@ -23,21 +23,6 @@ input {
 .swal-button {
   background-color: #ee5253;
 }
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
 button {
   font-size: 14px;
   padding: 0 40px;
