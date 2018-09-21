@@ -8,10 +8,10 @@ const isOdd = ((val) => {
 });
 
 const process = (() => {
-  let userInput = document.getElementById('binaryInput').value;
+  let userInput = document.getElementById('binaryInput').value,
+      oneCount = 0;
   if (userInput.length == 7) {
   for (i = 0; i < userInput.length; i++) { 
-    let oneCount = 0;
     console.log(userInput.charAt(i));
     if (userInput.charAt(i) == "1") {
       oneCount++;
