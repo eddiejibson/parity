@@ -3,11 +3,8 @@
 }
 body {
   overflow: hidden;
-  background: linear-gradient(269deg, #fd746c, #ff9068, #eb3349, #f45c43, #feac5e, #c779d0);
-  background-size: 1200% 1200%;
   background-color: #21D4FD;
   background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-
 }
 input {
     max-width: 20%;
