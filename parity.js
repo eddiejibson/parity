@@ -8,7 +8,7 @@ const isOdd = ((val) => {
 
 const isBinaryOdd = ((val) => {
   for (i = 0; i < val.length; i++) { 
-    if (userInput.charAt(i) == "1") {
+    if (val.charAt(i) == "1") {
       oneCount++;
     }
   }
