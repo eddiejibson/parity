@@ -7,6 +7,7 @@ const isOdd = ((val) => {
 });
 
 const isBinaryOdd = ((val) => {
+  let oneCount = 0;
   for (i = 0; i < val.length; i++) { 
     if (val.charAt(i) == "1") {
       oneCount++;
@@ -20,8 +21,7 @@ const isBinaryOdd = ((val) => {
 });
   
 var getOutput = (() => {
-let userInput = document.getElementById('binaryInput').value,
-oneCount = 0;
+let userInput = document.getElementById('binaryInput').value;
 if (userInput.length == 7) {
   if (isBinaryOdd(userInput)) {
     console.log("Parity bit is 1");
