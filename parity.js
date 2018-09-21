@@ -33,7 +33,9 @@ if (userInput.length == 7) {
   } else {
     //parity bit is 0
   }
- }
+} else if (userInput.length == 8) {
+ console.log(userInput.substr(1, userInput.length));
+}
 });
 document.getElementById("submit").addEventListener("click", getOutput);
 
