@@ -3,6 +3,12 @@
 }
 body {
   overflow: hidden;
+  background: linear-gradient(269deg, #fd746c, #ff9068, #eb3349, #f45c43, #feac5e, #c779d0);
+  background-size: 1200% 1200%;
+
+  -webkit-animation: AnimationName 17s ease infinite;
+  -moz-animation: AnimationName 17s ease infinite;
+  animation: AnimationName 17s ease infinite;
 }
 input {
     max-width: 30%;
@@ -20,6 +26,21 @@ input {
 }
 .swal-button {
   background-color: #ee5253;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 button {
   font-size: 14px;
