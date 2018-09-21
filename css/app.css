@@ -15,6 +15,9 @@ input {
     padding-left: 12px;
     padding-right: 12px;
 }
+.swal-button {
+  background-color: #ee5253;
+}
 button {
   font-size: 14px;
   padding: 0 40px;
