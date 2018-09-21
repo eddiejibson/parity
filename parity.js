@@ -18,7 +18,11 @@ const process = (() => {
     }
   }
   if (isOdd(oneCount)) {
-    console.log("Parity bit is 1")
+    console.log("Parity bit is 1");
+    swal({
+      icon: "success",
+      text: `1${userInput}` 
+    });
     //parity bit is 1
   } else {
     //parity bit is 0
