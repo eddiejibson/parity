@@ -34,7 +34,7 @@ if (userInput.length == 7) {
     //parity bit is 0
   }
 } else if (userInput.length == 8) {
-  if (isBinaryOdd(userInput.substr(1, userInput.length)) { //Don't send parity bit
+  if (isBinaryOdd(userInput.substr(1, userInput.length))) { //Don't send parity bit
       if (userInput.substr(0, 1) == 1) {
         swal({
           icon: "success",
