@@ -24,6 +24,12 @@ input {
 .swal-button {
   background-color: #6c5ce7;
 }
+.input-bar {
+  flex-direction: row;
+}
+.info-bar {
+  flex-direction: row;
+}
 
 button {
   font-size: 14px;
