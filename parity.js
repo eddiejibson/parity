@@ -29,9 +29,12 @@ if (userInput.length == 7) {
       icon: "success",
       title: `1${userInput}` 
     });
-    //parity bit is 1
   } else {
-    //parity bit is 0
+    console.log("Parity bit is 0");
+    swal({
+      icon: "success",
+      title: `0${userInput}` 
+    });
   }
 } else if (userInput.length == 8) {
   if (isBinaryOdd(userInput.substr(1, userInput.length))) { //Don't send parity bit
