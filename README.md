@@ -3,4 +3,4 @@ Very basic system that generates/validates a parity bit from the binary pattern 
 
 See it in action [here](https://eddiejibson.github.io/parity)
 
-Popup modules created using [SweetalertJS](https://github.com/t4t5/sweetalert). The rest was done from scratch.
+Popup modules created using [SweetalertJS](https://github.com/t4t5/sweetalert). The rest was done from scratch. No jQuery was used.
