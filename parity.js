@@ -96,7 +96,7 @@ const toggle = () => {
 }
 document.getElementById("submit").addEventListener("click", getOutput);
 document.getElementById("toggle").addEventListener("click", toggle);
-document.getElementById("input").addEventListener("keyup", function(e) {
+document.getElementById("binaryInput").addEventListener("keyup", function(e) {
   e.preventDefault();
   if (event.keyCode === 13) {
     document.getElementById("submit").click();
