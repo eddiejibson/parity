@@ -21,14 +21,13 @@ ul, a {
   text-decoration: none;
 }
 input {
- display: inline-flex;
+    display: inline-flex;
     max-width: 50%;
     width: 100%;
     border: 0 none;
     padding: 0 10px;
     background: #fff;
     color: #666;
-    border: 1px solid #e5e5e5;
     transition: .2s ease-in-out;
     transition-property: color,background-color,border;
     height: 55px;
@@ -53,7 +52,7 @@ button {
   font-size: 14px;
   background-color: #6c5ce7;
   color: #fff;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   border-radius: 0 5px 5px 0;
 }
 .submit-button {
