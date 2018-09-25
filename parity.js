@@ -71,8 +71,10 @@ const toggle = () => {
 console.log("toggled");
   if (evenParity) {
     evenParity = false;
+    document.getElementById("toggle").innerHTML = "Toggle Even";
   } else {
     evenParity = true;
+    document.getElementById("toggle").innerHTML = "Toggle Odd";
   }
 }
 document.getElementById("submit").addEventListener("click", getOutput);
