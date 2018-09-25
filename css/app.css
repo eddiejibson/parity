@@ -14,7 +14,7 @@ li {
    text-align: center;
    padding-right: 10px;
 }
-ul {
+ul, a {
   padding-left: 0;
   color: #dfe6e9;
 }
