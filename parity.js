@@ -39,8 +39,9 @@ if (userInput.length == 7) {
   let res = isBinaryOdd(userInput.substr(1, userInput.length));
   if (res == "invalid") {
     swal({
-     icon: "error",
-     title: "0s and 1s pls"
+      icon: "error",
+      title: "Invalid Input",
+      text: "Input must only be 0s and 1s..."
     });
   } else if (res) { //Don't send parity bit
       if (userInput.substr(0, 1) == 1) {
