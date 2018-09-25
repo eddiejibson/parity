@@ -95,9 +95,16 @@ const toggle = () => {
     document.getElementById("toggle-text").innerHTML = "Toggle Odd";
   }
 }
+const showInfo = () => {
+  swal({
+    title: "Information",
+    text: "Parity Bit: a bit which acts as a check on a set of binary values, calculated in such a way that the number of 1s in the set plus the parity bit should always be even (or occasionally, should always be odd). This tool can generate the correct parity bit for a binary pattern and also validate such if inputted."
+  });
+}
 document.getElementById("submit").addEventListener("click", getOutput);
 document.getElementById("toggle").addEventListener("click", toggle);
-document.getElementById("binaryInput").addEventListener("keyup", function(e) {
+document.getElementById("info").addEventListener("click", showInfo);
+document.getElementById("binaryInput").addEventListener("keyup", function(e) { //I should've just put as a form and prevented default but at this point idc
   e.preventDefault();
   if (event.keyCode === 13) {
     document.getElementById("submit").click();
