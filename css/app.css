@@ -38,6 +38,9 @@ input {
 .swal-button {
   background-color: #6c5ce7;
 }
+.swal-button:active, submit-button:active {
+  background-color: #6c5ce7;
+}
 .input-bar {
   flex-direction: row;
 }
