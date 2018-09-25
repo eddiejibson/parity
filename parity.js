@@ -69,6 +69,11 @@ if (userInput.length == 7) {
 });
 const toggle = () => {
 console.log("toggled");
+  if (evenParity) {
+    evenParity = false;
+  } else {
+    evenParity = true;
+  }
 }
 document.getElementById("submit").addEventListener("click", getOutput);
 document.getElementById("toggle").addEventListener("click", toggle);
