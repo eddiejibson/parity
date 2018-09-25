@@ -23,7 +23,8 @@ const isBinaryOdd = ((val) => {
 });
 var getOutput = (() => {
 let userInput = document.getElementById('binaryInput').value;
-if (userInput.length == 7) {
+console.log((userInput.length + 1) % 4);
+if ((userInput.length + 1) % 4 == 0) {
   let res = isBinaryOdd(userInput);
   if (res == "invalid") {
     swal({
@@ -44,7 +45,7 @@ if (userInput.length == 7) {
       text: "Parity bit is 0."
     });
   }
-} else if (userInput.length == 8) {
+} else if (userInput.length % 4 == 0) {
   let res = isBinaryOdd(userInput.substr(1, userInput.length));
   if (res == "invalid") {
     swal({
@@ -81,7 +82,7 @@ if (userInput.length == 7) {
   swal({
     icon: "error",
     title: "Invalid Input",
-    text: "Input must either be a 7 or 8 bit binary pattern."
+    text: "Invalid length"
   });
 }
 });
