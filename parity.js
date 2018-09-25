@@ -68,3 +68,4 @@ if (userInput.length == 7) {
 }
 });
 document.getElementById("submit").addEventListener("click", getOutput);
+document.getElementById("toggle").addEventListener("click", toggle);
