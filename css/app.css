@@ -19,7 +19,8 @@ ul {
   color: #dfe6e9;
 }
 input {
-    max-width: 20%;
+ display: inline-flex;
+    max-width: 50%;
     width: 100%;
     border: 0 none;
     padding: 0 10px;
