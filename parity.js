@@ -63,7 +63,7 @@ if (userInput.length == 7) {
   swal({
     icon: "error",
     title: "Invalid Input",
-    text: "Try again..."
+    text: "Input must either be a 7 or 8 bit binary pattern."
   });
 }
 });
