@@ -17,6 +17,7 @@ li {
 ul, a {
   padding-left: 0;
   color: #dfe6e9;
+  text-decoration: none;
 }
 input {
  display: inline-flex;
