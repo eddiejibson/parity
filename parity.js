@@ -24,7 +24,7 @@ if (userInput.length == 7) {
     console.log("Parity bit is 1");
     swal({
       icon: "success",
-      title: `1${userInput}` 
+      title: `1 ${userInput}` 
     });
   } else {
     console.log("Parity bit is 0");
