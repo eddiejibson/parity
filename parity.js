@@ -30,7 +30,7 @@ if (userInput.length == 7) {
     console.log("Parity bit is 0");
     swal({
       icon: "success",
-      title: `0${userInput}` 
+      title: `0 ${userInput}` 
     });
   }
 } else if (userInput.length == 8) {
