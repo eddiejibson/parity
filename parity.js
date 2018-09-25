@@ -2,7 +2,9 @@ var evenParity = true;
 const isBinaryOdd = ((val) => {
   let oneCount = 0;
   for (i = 0; i < val.length; i++) { 
-    if (val.charAt(i) == "1") {
+    if (val.charAt(i) != "0" && val.charAt(i) != "1") {
+      return "invalid";
+    } else if (val.charAt(i) == "1") {
       oneCount++;
     }
   }
@@ -34,7 +36,13 @@ if (userInput.length == 7) {
     });
   }
 } else if (userInput.length == 8) {
-  if (isBinaryOdd(userInput.substr(1, userInput.length))) { //Don't send parity bit
+  let res = isBinaryOdd(userInput.substr(1, userInput.length));
+  if (res == "invalid") {
+    swal({
+     icon: "error",
+     title: "0s and 1s pls"
+    });
+  } else if (res) { //Don't send parity bit
       if (userInput.substr(0, 1) == 1) {
         swal({
           icon: "success",
