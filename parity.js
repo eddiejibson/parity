@@ -1,11 +1,4 @@
-const isOdd = ((val) => {
-  if (val %2 == 0) {
-    return false;
-  }  else {
-    return true;
-  }
-});
-
+var evenParity = true;
 const isBinaryOdd = ((val) => {
   let oneCount = 0;
   for (i = 0; i < val.length; i++) { 
@@ -14,12 +7,16 @@ const isBinaryOdd = ((val) => {
     }
   }
   if (oneCount %2 == 0) {
-    return false;
+    if evenParity {
+      return false;
+    } else {
+      reture true;
+    }
+    
   }  else {
-    return true;
+    return evenParity;
   }
 });
-  
 var getOutput = (() => {
 let userInput = document.getElementById('binaryInput').value;
 if (userInput.length == 7) {
@@ -65,7 +62,3 @@ if (userInput.length == 7) {
 }
 });
 document.getElementById("submit").addEventListener("click", getOutput);
-
-
-
-
