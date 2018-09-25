@@ -23,12 +23,14 @@ if (userInput.length == 7) {
   if (isBinaryOdd(userInput)) {
     swal({
       icon: "success",
-      title: `1 ${userInput}` 
+      title: `1 ${userInput}`,
+      text: "Parity bit is 1."
     });
   } else {
     swal({
       icon: "success",
-      title: `0 ${userInput}` 
+      title: `0 ${userInput}`,
+      text: "Parity bit is 0."
     });
   }
 } else if (userInput.length == 8) {
