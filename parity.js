@@ -68,7 +68,6 @@ if (userInput.length == 7) {
 }
 });
 const toggle = () => {
-console.log("toggled");
   if (evenParity) {
     evenParity = false;
     document.getElementById("toggle-text").innerHTML = "Toggle Even";
