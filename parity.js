@@ -4,7 +4,6 @@ const isBinaryOdd = ((val) => {
   let oneCount = 0;
   for (i = 0; i < val.length; i++) { 
     if (val.charAt(i) != "0" && val.charAt(i) != "1") {
-      swal({title: "test"});
       return "invalid";
     } else if (val.charAt(i) == "1") {
       oneCount++;
