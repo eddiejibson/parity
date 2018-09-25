@@ -67,5 +67,8 @@ if (userInput.length == 7) {
   });
 }
 });
+const toggle = () => {
+console.log("toggled");
+}
 document.getElementById("submit").addEventListener("click", getOutput);
 document.getElementById("toggle").addEventListener("click", toggle);
