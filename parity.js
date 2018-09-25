@@ -22,7 +22,14 @@ const isBinaryOdd = ((val) => {
 var getOutput = (() => {
 let userInput = document.getElementById('binaryInput').value;
 if (userInput.length == 7) {
-  if (isBinaryOdd(userInput)) {
+  let res = isBinaryOdd(userInput);
+  if (res == "invalid") {
+    swal({
+      icon: "error",
+      title: "Invalid Input",
+      text: "Input must only be 0s and 1s..."
+    });
+  } else if (res) {
     swal({
       icon: "success",
       title: `1 ${userInput}`,
