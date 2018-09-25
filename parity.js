@@ -7,10 +7,10 @@ const isBinaryOdd = ((val) => {
     }
   }
   if (oneCount %2 == 0) {
-    if evenParity {
+    if (evenParity) {
       return false;
     } else {
-      reture true;
+      return true;
     }
     
   }  else {
