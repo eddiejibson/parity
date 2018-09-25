@@ -21,13 +21,11 @@ var getOutput = (() => {
 let userInput = document.getElementById('binaryInput').value;
 if (userInput.length == 7) {
   if (isBinaryOdd(userInput)) {
-    console.log("Parity bit is 1");
     swal({
       icon: "success",
       title: `1 ${userInput}` 
     });
   } else {
-    console.log("Parity bit is 0");
     swal({
       icon: "success",
       title: `0 ${userInput}` 
