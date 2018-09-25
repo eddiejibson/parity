@@ -1,3 +1,4 @@
+//quite aware this is a mess
 var evenParity = true;
 const isBinaryOdd = ((val) => {
   let oneCount = 0;
@@ -95,3 +96,9 @@ const toggle = () => {
 }
 document.getElementById("submit").addEventListener("click", getOutput);
 document.getElementById("toggle").addEventListener("click", toggle);
+input.addEventListener("keyup", function(e) {
+  e.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("submit").click();
+  }
+});
