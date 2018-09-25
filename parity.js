@@ -59,6 +59,12 @@ if (userInput.length == 7) {
         });
       }
   }
+} else {
+  swal({
+    icon: "error",
+    title: "Invalid Input",
+    text: "Try again..."
+  });
 }
 });
 document.getElementById("submit").addEventListener("click", getOutput);
